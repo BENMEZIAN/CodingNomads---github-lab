@@ -1,0 +1,30 @@
+# Git commands
+--------------
+
+1. Clone a github repository
+1.1- git clone <REMOTE HTTPS URL>
+1.2- git clone <REMOTE SSH URL>
+1.3- gh repo clone <REMOTE HTTPS URL>
+Check result : ls -al
+
+2. Initalize a repository
+git init
+
+3. Determine the status of a repository
+git status
+
+4. Working directory into staging area
+4.1- git add  <FILE>
+4.2- git add <FILE1> <FILE2> <FILE3>
+4.3- git add .
+
+5. Staging area into local repository 
+git commit -m "message of committing"
+git log (show history of commits)
+
+
+
+
+
+
+

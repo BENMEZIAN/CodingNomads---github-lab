@@ -131,7 +131,7 @@ git push -u origin main
 
 Day 2:
 ------
-git pull
+git pull origin <BRANCH_NAME>
 git status
 git add .
 git commit -m "update message"

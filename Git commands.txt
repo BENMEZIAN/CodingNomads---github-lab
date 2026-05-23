@@ -21,10 +21,118 @@ git status
 5. Staging area into local repository 
 git commit -m "message of committing"
 git log (show history of commits)
+git log --oneline (show oneline history of commits)
+
+6. Branch management
+git branch (show branches)
+git branch <BRANCH_NAME> (create branch)
+git checkout -b <BRANCH_NAME> (create and switch branch)
+git switch <BRANCH_NAME> (switch branch)
+git branch -m <NEW_NAME> (rename branch)
+git branch -d <BRANCH_NAME> (delete branch)
+git branch -D <BRANCH_NAME> (force delete branch)
+
+7. Remote Management
+git remote -v (Show remotes)
+git remote add origin <REMOTE_URL> (Add remote)
+git remote set-url origin <NEW_REMOTE_URL> (Change remote URL)
+git remote remove origin (Remove remote)
+
+8. Push Commands
+git push origin <BRANCH_NAME> (Push to remote repository)
+git push -u origin <BRANCH_NAME> (Push and set upstream)
+git push --all (Push all branches)
+git push --force (Force push)
+
+9. Pull Commands
+git pull (Pull latest changes)
+git pull origin <BRANCH_NAME> (Pull from specific branch)
+git pull --rebase (Pull with rebase)
+
+10. Fetch Commands
+git fetch (Fetch remote changes)
+git fetch --all (Fetch all remotes)
+
+11. Merge Branches
+git merge <BRANCH_NAME> (Merge branch into current branch)
+git merge --abort (Abort merge)
+
+12. Rebase Commands
+git rebase <BRANCH_NAME> (Rebase current branch)
+git rebase -i HEAD~3 (Interactive rebase)
+git rebase --abort (Abort rebase)
+git rebase --continue (Continue rebase)
+
+13. Restore & Reset
+git restore <FILE> (Restore file changes)
+git restore --staged <FILE> (Restore staged file)
+git reset (Reset staging area)
+git reset --soft HEAD~1 (Soft reset)
+git reset --hard HEAD~1 (Hard reset)
+
+14. Revert Commits
+git revert <COMMIT_ID> (Revert commit)
+
+15. Git Stash
+git stash (Save changes)
+git stash push -m "message" (Save with message)
+git stash list (List stashes)
+git stash apply (Apply stash)
+git stash pop (Pop stash)
+git stash drop (Delete stash)
+
+16. Tag Commands
+git tag <TAG_NAME> (Create tag)
+git tag -a <TAG_NAME> -m "message" (Annotated tag)
+git tag (List tags)
+git push origin --tags (Push tags)
+
+17. Difference Commands
+git diff (Show unstaged changes)
+git diff --staged (Show staged changes)
+git diff <BRANCH1> <BRANCH2> (Compare branches)
+
+18. Inspect Repository
+git show <COMMIT_ID> (Show commit details)
+git blame <FILE> (Show file history)
+git grep "text" (Search text in repository)
+
+19. GitHub CLI (gh)
+gh auth login (Authenticate GitHub CLI)
+gh repo create (Create repository)
+gh repo fork (Fork repository)
+gh pr create (Create pull request)
+gh pr list (List pull requests)
+gh repo clone <OWNER/REPOSITORY> (Clone repository)
+
+20. Git Configuration
+git config --global user.name "Your Name" (Set username)
+git config --global user.email "you@example.com" (Set email)
+git config --list (View configuration)
+git config --global core.editor "code --wait" (Set default editor)
+
+21. Miscellaneous
+git --version (Show Git version)
+git help (Show help)
+git <COMMAND> --help (Show command help)
+git clean -f (Remove untracked files)
+git clean -fd (Remove untracked files and directories)
+git archive --format zip --output repo.zip HEAD (Archive repository)
 
 
+Daily Git Workflow (Most Common Commands)
+-----------------------------------------
+Day 1:
+------
+git status
+git add .  (Add all files)
+git commit -m "first upload"
+git push -u origin main
 
-
-
-
-
+Day 2:
+------
+git pull
+git status
+git add .
+git commit -m "update message"
+git push
